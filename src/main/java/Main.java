@@ -31,6 +31,12 @@ public class Main {
 
     public static int getCarSpeed(Scanner scanner, int participantNumber) {
         System.out.printf("— Введите скорость машины №%d:", participantNumber);
+        if (!scanner.hasNextInt()) {
+            System.out.println("— Неправильная скорость");
+            scanner.next();
+            return getCarSpeed(scanner, participantNumber);
+        }
+
         int speed = scanner.nextInt();
         if (Car.isSpeedValid(speed)) {
             return speed;
