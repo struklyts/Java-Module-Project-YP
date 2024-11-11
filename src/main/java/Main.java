@@ -43,7 +43,6 @@ public class Main {
         }
         System.out.println("— Неправильная скорость");
 
-
         return getCarSpeed(scanner, participantNumber);
     }
 }
