@@ -1,8 +1,8 @@
 package main.java;
 
 public class Car {
-    public String title;
-    public int speed;
+    final public String title;
+    final public int speed;
 
     public Car(String title, int speed) {
         this.title = title;
